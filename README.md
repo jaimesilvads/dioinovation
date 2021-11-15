@@ -26,14 +26,14 @@ O desafio consiste em efetuar um processamento de dados utilizando o produto Dat
 
 1. Foi Criado um bucket no Cloud Storage com o nome **bddio**
 1. Foi Atualizdo o arquivo 'contador.py' com o nome do Bucket criado. Ficand assim:<br />
-  import sys
-  from pyspark import SparkContext, SparkConf
-  if __name__ == "__main__":
-      sc = SparkContext("local","PySpark Exemplo - Desafio Dataproc")
-      words = sc.textFile("gs://bddio/livro.txt").flatMap(lambda line: line.split(" "))
-      wordCounts = words.map(lambda word: (word, 1)).reduceByKey(lambda a,b:a +b).sortBy(lambda a:a[1], ascending=False)
-      wordCounts.saveAsTextFile("gs://bddio/resultado")
-2. foi feito o upload dos arquivos 'contador.py' e 'livro.txt' para o bucket criado (instruções abaixo)
+  import sys <br />
+  from pyspark import SparkContext, SparkConf <br />
+  if __name__ == "__main__":<br />
+      sc = SparkContext("local","PySpark Exemplo - Desafio Dataproc")<br />
+      words = sc.textFile("gs://bddio/livro.txt").flatMap(lambda line: line.split(" "))<br />
+      wordCounts = words.map(lambda word: (word, 1)).reduceByKey(lambda a,b:a +b).sortBy(lambda a:a[1], ascending=False)<br />
+      wordCounts.saveAsTextFile("gs://bddio/resultado")<br />
+2. Foi feito o upload dos arquivos 'contador.py' e 'livro.txt' para o bucket criado (instruções abaixo)
     - https://cloud.google.com/storage/docs/uploading-objects
 
 1. Foi Utilizado o código em um cluster Dataproc, executando um Job do tipo PySpark chamando 'gs://bddio/contador.py'
