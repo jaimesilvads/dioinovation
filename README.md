@@ -12,7 +12,7 @@ Código criado para utilização junto a plataforma da Digital Innovation One
 
 __*Foi Criando um ecossistema Hadoop totalmente gerenciado com Google Cloud Platform*__
 
-O desafio consistia em efetuar um processamento de dados utilizando o produto Dataproc do GCP. Esse processamento deveira efetuar a contagem das palavras de um livro e informar quantas vezes cada palavra aparece no mesmo.
+O desafio consistia em efetuar um processamento de dados utilizando o produto Dataproc do GCP. Esse processamento deveira efetuar a contagem das palavras de um livro e informar quantas vezes cada palavra aparecia no mesmo.
 
 ---
 
