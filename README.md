@@ -24,8 +24,8 @@ O desafio consiste em efetuar um processamento de dados utilizando o produto Dat
 
 ### Etapas do Desafio
 
-1. Foi Criado um bucket no Cloud Storage com o nome bddio
-1. Foi Atualizdo o arquivo 'contador.py' com o nome do Bucket criado. Ficand assim:
+1. Foi Criado um bucket no Cloud Storage com o nome **bddio**
+1. Foi Atualizdo o arquivo 'contador.py' com o nome do Bucket criado. Ficand assim:<br />
   import sys
   from pyspark import SparkContext, SparkConf
   if __name__ == "__main__":
